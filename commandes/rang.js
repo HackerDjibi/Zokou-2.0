@@ -64,7 +64,7 @@ function get_level_exp(xp) {
     for (let i = 0; i < levelThresholds.length; i++) {
         if (xp >= levelThresholds[i].xpThreshold) {
             level = levelThresholds[i].level;
-            xplimit = levelThresholds[i + 1]?.xpThreshold || 'No-limit';
+            xplimit = levelThresholds[i + 10]?.xpThreshold || 'No-limit';
             exp = xp - levelThresholds[i].xpThreshold;
         } else {
             break;
